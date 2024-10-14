@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Login y Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulario de Login -->
+        <div class="form-container" id="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="login-username">Usuario:</label>
+                    <input type="text" id="login-username" placeholder="Ingresa tu usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Contraseña:</label>
+                    <input type="password" id="login-password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <button type="submit">Ingresar</button>
+                <p id="login-message"></p>
+                <p>¿No tienes cuenta? <a href="#" id="switch-to-register">Regístrate aquí</a></p>
+            </form>
+        </div>
+
+        <!-- Formulario de Registro -->
+        <div class="form-container" id="register-container" style="display:none;">
+            <h2>Registrarse</h2>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="register-username">Usuario:</label>
+                    <input type="text" id="register-username" placeholder="Crea un usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Contraseña:</label>
+                    <input type="password" id="register-password" placeholder="Crea una contraseña" required>
+                </div>
+                <button type="submit">Registrar</button>
+                <p id="register-message"></p>
+                <p>¿Ya tienes cuenta? <a href="#" id="switch-to-login">Inicia sesión aquí</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
